@@ -84,7 +84,7 @@ LLM (DeepSeek-V4-Pro) 生成回答
 
 ##  自定义修改
 
-- **加入自己的huggingface api key**：将`os.environ["huggingface_api_key"]="Your Key"`中的等号右边改为自己的api key。
+- **加入自己的huggingface api key**：将`os.environ["HUGGINGFACEHUB_API_KEY"]="Your Key"`中的等号右边改为自己的api key。
 - **更换嵌入模型**：修改 `HuggingFaceEndpointEmbeddings` 中的 `model` 参数。
 - **更换 LLM**：修改 `repo_id` 为其他 HuggingFace 支持的对话模型（如 `meta-llama/Llama-3-8B-Instruct`）。
 - **调整检索数量**：修改 `retrieval()` 函数中的 `k` 值（默认为 3）。
